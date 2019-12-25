@@ -1,0 +1,45 @@
+body{
+    background-color:#17202A;
+}
+    h1{
+        text-transform: uppercase;
+        text-align: center;
+        color: aliceblue;
+        font-family: 'Orbitron', sans-serif;
+    }
+    h2{
+        text-transform: uppercase;
+        text-align: center;
+        color: aliceblue;
+        font-family: 'Orbitron', sans-serif;
+}
+   h3{
+        text-transform: uppercase;
+        text-align: center;
+        color: aliceblue;
+        font-family: 'Orbitron', sans-serif;
+}
+.dropdown{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.dropdown select{
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+}
+.dropdown input{
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+}
+@media(min-width:500px){
+    .info iframe{
+        width: 200px;
+        height: 200px;
+    }
+}

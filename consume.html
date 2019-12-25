@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width:device-width,initial scale=1"/>
+    <link rel="stylesheet" type="text/css" href="styleempdet.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Smart e-meter</h1>
+    <h2>user-info</h2>
+    <h2>User-ID: **** ****</h2>
+    <h2>Total readings</h2>
+    <div class="info">
+    <iframe width="350" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/849449/widgets/96199"></iframe>
+        </div>
+    <h2>Monthly unit readings (for 2 months)</h2>
+    <div class="info">
+    <iframe width="350" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/849449/widgets/96199"></iframe>
+        </div>
+    <h2>Amount to be paid</h2>
+    <div class="info">
+    <iframe width="350" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/849449/widgets/96199"></iframe>
+        </div>
+
+    <form id="myform">
+        <div class="dropdown">
+    <input onclick="checklog()" type="submit" value="Logout">
+</div>
+    </form>
+    <script>
+    function check(){
+        var area= document.getElementById("area").value;
+        var street= document.getElementById("street").value;
+        var doorno= document.getElementById("doorno").value;
+        if( area === "ondipudur" && street === "layout 2" && doorno === "3"){
+            document.getElementById("myform").action="empdet2.html";
+        }else{
+            document.getElementById("myform").action="empdetails.html";
+        }
+    }
+        function checklog(){
+        document.getElementById("myform").action="login.html"
+    }
+    </script>
+
+
+
+        </body>

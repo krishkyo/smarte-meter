@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>َAnimated Login Form</title>
+      <meta name="viewport" content="width:device-width,initial scale=1"/>	
+      <link rel="stylesheet" href="stylelogin.css">  
+  </head>
+  <body>
+<h1>LOGIN</h1>
+<div class="container">      
+<form  id="myform" class="box"  name="myform"  method="post">
+  <h1>consumer</h1>
+  <input type="text" name="username" placeholder="Username">
+  <input type="password" name="password" placeholder="Password">
+  <input type="submit" name="" onclick="check()" value="Login"> 
+</form>
+
+<form  id="myform2" class="box2" name="myform2" method="post">
+  <h1>Employee</h1>
+  <input type="text" name="username" placeholder="Username">
+  <input name="password" type="password" name="" placeholder="Password">
+  <input onclick="check2()" type="submit" name="enter"  value="Login"> 
+</form>
+</div>
+<script>
+   function check2(){
+       var name2= document.forms["myform2"]["username"].value;
+       var pwd2= document.forms["myform2"]["password"].value;
+       if( name2==="admin" && pwd2==="admin"){
+        document.getElementById("myform2").action="employee.html";
+       }else{
+           alert("username and password is incorrect");
+       }
+   }
+    function check(){
+       var name1= document.forms["myform"]["username"].value;
+       var pwd1= document.forms["myform"]["password"].value;
+       if( name1==="user" && pwd1==="user"){
+        document.getElementById("myform").action="consume.html";
+       }else{
+           alert("username and password is incorrect");
+       }
+   }
+     
+    </script>
+
+    </body>
+</html>
